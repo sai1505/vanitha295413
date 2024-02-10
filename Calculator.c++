@@ -1,14 +1,14 @@
 #include<iostream>
 #include<string>
-  using namespace std;
- int main()
- {
+using namespace std;
+int main()
+{
     float num1,num2;
-    cout<<"1.addition,2.substraction,3.multiplication,4.division ";
     int choice;
-    cin>>choice;
     cout<<"Enter two operands : "<<endl;
     cin>>num1>>num2;
+    cout<<"1.addition\n2.substraction\n3.multiplication\n4.division\nEnter choice : ";
+    cin>>choice;
     switch (choice)
     {
         case 1:
@@ -26,3 +26,5 @@
         default :
         cout<<"invalid choice "<<endl;
     }
+    return 0;
+}
