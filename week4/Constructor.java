@@ -1,13 +1,16 @@
+import java.util.Scanner;
 class Student
 {
   public
     Student()
     {
-      System.out.print("Student class is created!!\nIam a student\n");
+      String collegeName="MVGR";
+      int collegeCode=33;
+      System.out.print("CollegeName : "+collegeName+"\n"+"CollegeCode : "+collegeCode+"\n");
     }
     Student(String fullName,double semPercentage)
     {
-      System.out.print("FullName : "+fullName+"\n"+"SemPercentage : "+semPercentage);
+      System.out.print("FullName : "+fullName+"\n"+"SemPercentage : "+semPercentage+"\n");
     }
 }
 
@@ -18,6 +21,13 @@ public class Constructor
     @SuppressWarnings("unused")
     Student vanitha=new Student();
     @SuppressWarnings("unused")
-    Student vanitha01=new Student("G.Vanitha",98);
+    String name;
+    double percentage;
+    Scanner input=new Scanner(System.in);
+    System.out.print("Enter your sweet name : ");
+    name=input.nextLine();
+    System.out.print("Enter your semPercentage : ");
+    percentage=input.nextDouble();
+    Student vanitha01=new Student(name,percentage);
   }
 }
