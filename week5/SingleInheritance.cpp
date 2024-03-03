@@ -30,6 +30,7 @@ class HumanChild: public HumanParent
 
 int main()
 {
+    //HumanParent obj;
     HumanChild obj;
     obj.displayBreed();
     obj.eat();
