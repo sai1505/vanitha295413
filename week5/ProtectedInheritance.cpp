@@ -31,7 +31,7 @@ class SubClass: protected SuperClass
 int main()
 {
     SuperClass obj;
-    SubClass1 obj1;
+    SubClass obj1;
     cout<<"Protected Inheritance\n";
     cout<<"Public : "<<obj1.var1<<endl;
     cout<<"Protected : "<<obj1.var2<<endl;
