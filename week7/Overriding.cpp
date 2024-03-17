@@ -8,6 +8,11 @@ class Add2int
     {
         cout<<"Sum of 2 Integers(int) : "<<a+b<<endl;
     }
+};
+
+class Add2float: public Add2int
+{
+    public:
     void add(float a,float b)
     {
         cout<<"Sum of 2 Integers(float) : "<<a+b<<endl;
@@ -16,8 +21,8 @@ class Add2int
 
 int main()
 {
-    Add2int obj;
+    Add2float obj;
     obj.add(1,67);
-    obj.add(1.45f,2.78f);
+    obj.add(1.45,2.78);
     return 0;
 }
